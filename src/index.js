@@ -4,9 +4,8 @@ import "./index.css";
 let time = new Date();
 
 let currDate = new Date();
-let hrs =  currDate.getHours();
 let minutes = (currDate.getMinutes()).toLocaleString();
-
+let sec = currDate.getSeconds();
 
 
 let samay  = time.getHours();
@@ -35,6 +34,8 @@ else{
 }
 ReactDOM.render(
   <>
+      <p className='heading'>Clock By Vedant</p>
+
   <div className = "container">
     <div className = "small_container">
       <h1>
@@ -42,7 +43,7 @@ ReactDOM.render(
     <br/>
          <span style={cssStyle}>{greeting}!</span></h1>
          <br />
-         This is {hrs} : {minutes}
+         This is <span className='temp__time'>{samay} : {minutes} : {sec} </span>
 
     </div>
   </div>
