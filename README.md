@@ -10,7 +10,7 @@ Built using React for fast and efficient rendering
 To get started with the project, simply clone the repository and install the dependencies:
 
 ## Copy code
-$ git clone https://github.com/your-username/react-clock.git
+$ git clone https://github.com/vedantpatil25/react-clock.git
 $ cd react-clock
 $ npm install
 
