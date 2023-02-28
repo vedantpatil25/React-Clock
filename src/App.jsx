@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 let time = new Date();
 
 function App() {
+
+
+  let currTime = new Date().toLocaleTimeString();
+  
+  const [cTime , setCurrTime] = useState(currTime);
+
   let currDate = new Date();
   let hrs = currDate.getSeconds();
   let minutes = currDate.getMinutes().toLocaleString();
   let sec = currDate.getSeconds();
+
+
+  const updateTime = ()=>
+  {
+    let currTime = new Date().toLocaleTimeString();
+    setCurrTime(currTime);
+  }
+
 
   if(hrs<10) hrs = '0' + hrs;
   if(sec<10) sec = '0' + sec;
@@ -41,10 +55,14 @@ function App() {
             <span style={cssStyle}>{greeting}!</span>
           </h1>
           <br />
-          This is{" "}
+          This is
           <span className="temp__time">
-            {samay} : {minutes} : {sec}{" "}
+            {cTime}
+
           </span>
+          <br />
+          <button className="getTime__button" onClick={updateTime}>Get time</button>
+
         </div>
       </div>
     </>

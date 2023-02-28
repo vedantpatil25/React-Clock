@@ -70,3 +70,16 @@ code {
   top: 50px;
 }
 }
+
+.getTime__button
+{
+  border: 1px solid #950f21; 
+  padding: 5px;
+  background-color: #edf7f6;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  left:  0px;
+  font-size: 30px;
+
+}
