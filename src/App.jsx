@@ -20,6 +20,8 @@ function App() {
     setCurrTime(currTime);
   }
 
+  setInterval(updateTime,1000);
+
 
   if(hrs<10) hrs = '0' + hrs;
   if(sec<10) sec = '0' + sec;
@@ -61,7 +63,7 @@ function App() {
 
           </span>
           <br />
-          <button className="getTime__button" onClick={updateTime}>Get time</button>
+          {/* <button className="getTime__button" onClick={updateTime}>Get time</button> */}
 
         </div>
       </div>
